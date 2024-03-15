@@ -87,6 +87,25 @@
 		let description5 = data.results[4].description//.substring(0,300) + '..'
 		let title6 = data.results[5].title
 		let description6 = data.results[5].description//.substring(0,300) + '..'
+		
+		
+		let arturl1 = data.results[0].article_url
+		document.getElementById("link1").href=arturl1;
+		
+		let arturl2 = data.results[1].article_url
+		document.getElementById("link2").href=arturl2;
+		
+		let arturl3 = data.results[2].article_url
+		document.getElementById("link3").href=arturl3;
+		
+		let arturl4 = data.results[3].article_url
+		document.getElementById("link4").href=arturl4;
+		
+		let arturl5 = data.results[4].article_url
+		document.getElementById("link5").href=arturl5;
+		
+		let arturl6 = data.results[5].article_url
+		document.getElementById("link6").href=arturl6;
 
 
 		console.log(description1)
