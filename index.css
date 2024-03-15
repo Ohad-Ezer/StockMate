@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: rgba(245,235,224,255);
+}
+
+.content {
+    margin-top: 5%;
+}
+.text{
+    float: left;
+    width: 30%;
+}
+.text h1 {
+    padding-left: 10%;
+    margin-top: 20%;
+    font-size: 55px;
+}
+
+.text p {
+    padding-left: 10%;
+    font-size: 18px ;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+.image {
+    float: left;
+    width: 70%;
+}
+
+.image img {
+    margin-left: 10%;
+    border-radius: 30%;
+    width: 85%;
+}
+
+.text button {
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 35%;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, rgb(12, 12, 116) 0%, rgba(9,9,121,1) 20%, rgba(0,112,255,1) 66%);
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.text button:hover {
+    background: linear-gradient(135deg, rgba(0,112,255,1) 0%, rgba(9,9,121,1) 20%, rgb(12, 12, 116) 66%);
+}
