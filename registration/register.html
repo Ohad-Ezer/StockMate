@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="registercss.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registration </title>
+     <script>
+    
+        function validate(){
+            var password = document.getElementById("password");
+            var confirmPasswordInput = document.getElementById("confirmPassword");
+
+            // Check if the password is at least 8 characters
+            if (password.value.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            // Check if the password and confirm password fields match
+            if (password.value !== confirmPassword.value) {
+                alert("Password and Confirm Password do not match.");
+                return false;
+            }
+            
+            console.log("Form validated successfully.");
+            return true;
+        }
+
+   
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Registration</h1>
+        <h3>Join StockMate for personalized portfolios and real-time insights – your investment journey begins now!</h3>
+        <form action="register.php" method="post" onsubmit="return validate()">
+            <div class="input-box">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="Full Name" required id="fullname" name="fullname">    
+            </div>
+            <div class="input-box">
+                <i class='bx bx-user' style="vertical-align: middle;"></i>
+                <input type="text" placeholder="Username" required id="username" name="username">    
+                
+            </div>
+            <div class="input-box">
+                <i class='bx bx-phone' ></i>
+                <input type="number" placeholder="Phone Number" required name="phonenumber">    
+            </div>
+            <div class="input-box">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Email Address" required name="email">    
+            </div>
+            <div class="input-box">
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" placeholder="Password" required id="password" name="password">
+            </div>
+            <div class="input-box">
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" placeholder="Confim Password" required id="confirmPassword" name="confirmPassword"> 
+            </div>
+            
+            <div class="buttons-box">
+                
+                <div class="radio-input">
+                    <i class='bx bx-low-vision'></i>                    
+                    <label>Profile Visibility</label>
+                    <input class="radiobtn" type="radio" id="Private" name="visibility" value="private" required>    
+                    <label>Private</label>
+                    <input class="radiobtn" type="radio" id="Public" name="visibility" value="Public">    
+                    <label>Public</label>
+                </div>
+                <div class="radio-input">
+                    <i class='bx bx-signal-4' ></i>                   
+                    <label>Knowledge Level</label>
+                    <input class="radiobtn" type="radio" id="Beginner" name="level" value="Beginner" required>    
+                    <label>Beginner</label>
+                    <input class="radiobtn" type="radio" id="Intermediate" name="level" value="Intermediate">    
+                    <label>Intermediate</label>
+                    <input class="radiobtn" type="radio" id="Expert" name="level" value="Expert">    
+                    <label>Expert</label>
+                </div>
+            </div>
+            <div class="btnsub">
+                <button type="submit" class="btn btn-light">register</button>
+            </div>
+
+        </form>
+        
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://www.interactivebrokers.com/images/web/Commissions-bg-900x495.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.wrapper {
+    width: 750px;
+    max-width: 750px;
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+}
+.wrapper h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper h3 {
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.wrapper .input-box {
+    width: 45%;
+    margin:2.5% 2.5% 0 2.5% ;
+    float: left;
+    font-size: 14px;
+
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    float: left;
+}
+
+input {
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+
+.buttons-box {
+    clear: both;
+    margin: 2.5%;
+    padding-top: 2.5%;
+}
+
+.input-box input, select {
+    border-radius: 5px;
+    flex: 1; 
+    padding-left: 10px;
+    height: 35px;
+}
+
+.radiobtn {
+    margin-left: 3%;
+}
+
+.btnsub {
+    text-align: center;
+}
+.btn {
+    overflow: hidden;
+    width: 70%;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #dbe0e5; 
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 10px auto; 
+}
+.btn:hover {
+    background-color: #1a232e; 
+    color: #fff; 
+}
+
+
+@media (max-width: 600px) {
+    .wrapper .input-box {
+        width: 95%; 
+    }
+    .wrapper h1 {
+        font-size: 40px;
+    }
+    .input-box input,
+    .input-box .select,
+    .radio-input label,
+    .radiobtn {
+        font-size: 14px;
+    }
+    .span1{
+        display: none;
+    }
+}
+
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding-left: 30px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888; 
+}
+
+span {
+    height: auto;
+    color: red;
+}
+
