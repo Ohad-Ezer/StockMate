@@ -1,0 +1,88 @@
+* {
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/graph-chart-with-moving-up-arrow-stock-market-financial-investment-diagram-blue-background_56104-1814.jpg?w=996&t=st=1704895561~exp=1704896161~hmac=0434ea034d9ed944810be3afdd282167e46a15006def2e77f88b544684882927');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.center {
+    text-align: center;
+    background-color:transparent;
+    padding: 30px;
+    overflow: auto;
+    color: aliceblue;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(245, 245, 220, 0.605);
+}
+
+.center h1 {
+    font-size: 60px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+}
+
+input {
+    border-radius: 15px;
+    width: 90%;
+    height: 35px;
+    flex: 1; 
+    padding-left: 10px;
+}
+.input-box i {
+    margin-left: 10px; 
+}
+.center .btn {
+    width: 50%;
+    height: 45px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-top: 8%;
+    background-color: #cdd9e6; 
+    color: #343a40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.center .btn:hover {
+    background-color: #9fb9d5; 
+    color: #ffffff; 
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+ a:hover {
+    color: #a3d2d6; 
+
+ }
+
+@media only screen and (max-width: 600px) {
+    .center {
+        padding: 10px;
+    }
+
+    .center h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+}
