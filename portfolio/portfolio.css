@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3e9ed;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #190c35;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s;
+}
+
+aside nav a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+aside nav a:hover:not(.active) {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+
+.top a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav.active {
+    display: block; 
+}
+nav p {
+    color: aliceblue;
+    padding-left: 7px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.top {
+    text-align: center;
+    margin-top: 15%;
+    color: aliceblue;
+}
+
+
+main {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: auto;
+}
+h1 {
+    font-size: 14px;
+}
+
+.wrapper {
+    margin:auto;
+    margin-top: 2%;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #888;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.wrapper h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+}
+
+
+.wrapper .input-box {
+    width: 45%;
+    margin:2.5% 2.5% 0 2.5% ;
+    float: left;
+    font-size: 16px;
+}
+
+.wrapper .input-box input{
+    width: 100%;
+    float: left;
+    background-color: rgb(231, 234, 243);
+    color: rgb(10, 10, 10);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+input::placeholder {
+    color: #4f4c4c;
+
+}
+.wrapper select {
+    background-color: rgb(231, 234, 243);
+    color: rgb(10, 10, 10);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.wrapper select option {
+    color: rgb(10, 10, 10);
+}
+
+.input-box input, select{
+    border-radius: 5px;
+    flex: 1; 
+    padding-left: 10px;
+    height: 35px;
+}
+.selectPortfolio {
+    width: 100%;
+    padding-left: 30px;
+}
+
+select option {
+        padding: 0; /* Set padding to 0 */
+    }
+
+.add {
+    padding-top: 2.5%;
+    clear: both;
+    margin: 2.5% 2.5% 0 2.5%; 
+}
+
+.add h3 {
+    font-size: large;
+    margin-bottom:5px;
+}
+.add p {
+    font-size: 13px;
+    color: red;
+    margin-bottom:15px;
+}
+
+.stockrow {
+    margin-bottom:3px;
+    
+}
+.stockrow input{
+    width: 25%;
+    background-color: rgb(231, 234, 243);
+    color: rgb(10, 10, 10);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-radius: 5px;
+    flex: 1; 
+    padding-left: 10px;
+    height: 35px;
+    font-size: 14px;
+
+}
+
+.stockrow select {
+    font-size:14px;
+}
+
+.btnsub {
+    margin-top:50px;
+    text-align: center;
+}
+
+.btn {
+    overflow: hidden;
+    width: 70%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    border: none;
+    padding: 12px 20px;
+
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.btnsub .btn {
+    cursor:pointer;
+    font-size: 16px;
+}
+
+.addbtn {
+    border: none;
+    background-color: #aecdef;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/**/
+.addbtn:hover {
+    background-color: #87a5c6;
+
+}
+
+
+@media (max-width: 600px) {
+    .wrapper .input-box {
+        width: 95%; 
+    }
+    .wrapper h1 {
+        font-size: 40px;
+    }
+    .input-box input,
+    .input-box .select,
+    .radio-input label,
+    .radiobtn {
+        font-size: 14px;
+    }
+  
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding-left: 30px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000; 
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    aside a {text-align: center; float: none;}
+    main {margin-left: 0;}
+    aside .top {margin: 0;}
+    nav {
+        margin-top: 0;
+    }
+    nav p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+      height: 100vh;
+    }
+  
+    .wrapper {
+      width: 90%;
+      margin: 10% auto;
+    }
+  
+    .wrapper .input-box {
+      width: 100%;
+      display: block; 
+    }
+  
+    .wrapper .input-box input[type="email"],
+    .wrapper .input-box input[type="text"] {
+      width: calc(100% - 20px); 
+      margin-bottom: 10px; 
+    }
+  
+    .stockrow {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .add .stockrow select,
+    .add .stockrow input,
+    .add .stockrow label,
+    .add .stockrow .plus-circle {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+
+}
+
+
+
+footer {
+    color: #484747;
+    padding: 20px 0;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    margin-top: 1%;
+    
+}
+.social-icons a {
+    color: #1e1b1b;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-top: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-width: 1px;
+    color: #000000;
+}
+
+ .stockrow {
+    margin-top: 3px;
+ }
+  
+  
+  
+.add-more-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust as needed */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+}
+
+.add-more-button:hover {
+    background-color: #218838; 
+}
+
+.remove-button {
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; 
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
