@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://galb.mtacloud.co.il/StockMate/Report/Stock%20Data%20Report.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link href="live_feed.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="live_feed.js"></script>
+
+
+    <title>Stock Data Report</title>
+  </head>
+
+  <body>
+    <aside>
+        <div class="top">
+            <a href="../home/home.php"><h1 style="font-size: 24px; font-weight: bold;">StockMate</h1></a>
+        </div>
+        <nav>
+            <a href="../myProfile/myProfile.php">
+                <i class='bx bx-user-circle'></i>
+                <span class="nav-item">My Profile</span>
+            </a>
+            <a href="../portfolio/portfolio.php">
+                <i class='bx bx-briefcase' ></i>
+                <span class="nav-item">Create Portfolio</span>
+            </a>
+            <p>Reports</p>
+            <a href="../Report/First Stock Data Report.php">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">Create Report</span>
+            </a>
+            <a href="../Report/myReport.php">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">My Reports</span>
+            </a>
+            <p>News Feed</p>
+            <a href="../NewsFeed/formpagev2.html">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">Feed Preferences</span>
+            </a>
+            <a href="../NewsFeed/live_feed.html">
+                <i class='bx bx-news' ></i>
+                <span class="nav-item">Custom Feed</span>
+            </a>
+            <p>Social</p>
+            <a href="../friends/friends.php">
+                <i class='bx bx-user-plus'></i>
+                <span class="nav-item">Add Friends</span>
+            </a>
+            <a href="../Groups/Stock Trading Groups.php">
+                <i class='bx bx-group' ></i>
+                <span class="nav-item">Groups</span>
+            </a>
+            <p></p>
+            <p></p>
+                <a href="../home/logout.php?logout">
+                <i class='bx bx-log-out' ></i>
+                <span class="nav-item">Logout</span>
+            </a>
+        </nav>
+
+    </aside>
+        <main>
+      <div class="container">
+        <h1>What’s New</h1>
+        <br>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-1.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title1" >Some Title</a></h3>
+            <h4 id = "description1"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>06 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>3.5k Views</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-2.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title2" >Some Title</a></h3>
+            <h4 id = "description2"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>08 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>6.9k Views</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-3.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title3" >Some Title</a></h3>
+            <h4 id = "description3"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>05 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>2.3k Views</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-4.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title4" >Some Title</a></h3>
+            <h4 id = "description4"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>05 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>6.7k Views</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-5.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title5" >Some Title</a></h3>
+            <h4 id = "description5"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>06 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>3.5k Views</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container ">
+          <div class = "flex-child">
+            <a href="https://www.benzinga.com/trading-ideas/long-ideas/24/02/36930849/top-5-consumer-stocks-that-could-blast-off-in-q1">
+            <img src="news-6.jpg"  width="170" height="130">
+          </a>
+          </div>
+          <div class = "flex-child">
+            <h3 id="title6" >Some Title</a></h3>
+            <h4 id = "description6"> place holder </h4>
+          </div>
+          <div class = "right_det">
+            <div class = "aaa">
+              <h4>07 minute read</h4>
+            </div>
+            <div class = "aaa">
+              <h4>4.3k Views</h4>
+            </div>
+          </div>
+        </div>
+   
+    </main>
+   <footer>
+        <div class="footer-bottom">
+            <hr>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href=""><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <p>&copy; 2024 StockMate. All Rights Reserved.</p>     
+        </div>
+    </footer>
+  </body>
+</html>

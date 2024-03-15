@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://galb.mtacloud.co.il/StockMate/Report/Stock%20Data%20Report.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link href="live_feed.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <link rel="stylesheet" href="formpagev2.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script>
+    function myFunction() {
+        if (document.getElementById('checkboxOne').checked) {
+            sessionStorage.setItem('checkboxOne', document.getElementById("checkboxOne").value);
+        } else {
+            sessionStorage.setItem('checkboxOne', 'null');
+        }
+        
+        if (document.getElementById('checkboxTwo').checked) {
+            sessionStorage.setItem('checkboxTwo', document.getElementById("checkboxTwo").value);
+        } else {
+            sessionStorage.setItem('checkboxTwo', 'null');
+        }
+        
+        if(document.getElementById('checkboxThree').checked) {
+            sessionStorage.setItem('checkboxThree', document.getElementById("checkboxThree").value);
+        } else {
+            sessionStorage.setItem('checkboxThree', 'null');
+        }
+        
+        if (document.getElementById('checkboxFour').checked) {
+            sessionStorage.setItem('checkboxFour', document.getElementById("checkboxFour").value);
+        } else {
+            sessionStorage.setItem('checkboxFour', 'null');
+        }
+        
+        if (document.getElementById('checkboxFive').checked) {
+            sessionStorage.setItem('checkboxFive', document.getElementById("checkboxFive").value);
+        } else {
+            sessionStorage.setItem('checkboxFive', 'null');
+        }
+        
+        if (document.getElementById('checkboxSix').checked) {
+            sessionStorage.setItem('checkboxSix', document.getElementById("checkboxSix").value);
+        } else {
+            sessionStorage.setItem('checkboxSix', 'null');
+        }
+        
+        if(document.getElementById('checkboxSeven').checked) {
+            sessionStorage.setItem('checkboxSeven', document.getElementById("checkboxSeven").value);
+        } else {
+            sessionStorage.setItem('checkboxSeven', 'null');
+        }
+        
+        if (document.getElementById('checkboxEight').checked) {
+            sessionStorage.setItem('checkboxEight', document.getElementById("checkboxEight").value);
+        } else {
+            sessionStorage.setItem('checkboxEight', 'null');
+        }
+        
+        
+        if(document.getElementById('checkboxNine').checked) {
+            sessionStorage.setItem('checkboxNine', document.getElementById("checkboxNine").value);
+        } else {
+            sessionStorage.setItem('checkboxNine', 'null');
+        }
+        
+        if (document.getElementById('checkboxTen').checked) {
+            sessionStorage.setItem('checkboxTen', document.getElementById("checkboxTen").value);
+        } else {
+            sessionStorage.setItem('checkboxTen', 'null');
+        }
+        
+        if (document.getElementById('checkboxEleven').checked) {
+            sessionStorage.setItem('checkboxEleven', document.getElementById("checkboxEleven").value);
+        } else {
+            sessionStorage.setItem('checkboxEleven', 'null');
+        }
+        
+        if (document.getElementById('checkboxTwelve').checked) {
+            sessionStorage.setItem('checkboxTwelve', document.getElementById("checkboxTwelve").value);
+        } else {
+            sessionStorage.setItem('checkboxTwelve', 'null');
+        }
+        
+        if(document.getElementById('checkboxThirteen').checked) {
+            sessionStorage.setItem('checkboxThirteen', document.getElementById("checkboxThirteen").value);
+        } else {
+            sessionStorage.setItem('checkboxThirteen', 'null');
+        }
+        
+        if (document.getElementById('checkboxFourteen').checked) {
+            sessionStorage.setItem('checkboxFourteen', document.getElementById("checkboxFourteen").value);
+        } else {
+            sessionStorage.setItem('checkboxFourteen', 'null');
+        }
+
+
+      window.location.href="https://galb.mtacloud.co.il/StockMate/NewsFeed/live_feed.html"; 
+      alert("Thanks, we got it!");
+      
+    }
+    </script>
+
+
+
+    <title>Stock Data Report</title>
+  </head>
+
+  <body>
+    <aside>
+        <div class="top">
+            <a href="../home/home.php"><h1 style="font-size: 24px; font-weight: bold;">StockMate</h1></a>
+        </div>
+        <nav>
+            <a href="../myProfile/myProfile.php">
+                <i class='bx bx-user-circle'></i>
+                <span class="nav-item">My Profile</span>
+            </a>
+            <a href="../portfolio/portfolio.php">
+                <i class='bx bx-briefcase' ></i>
+                <span class="nav-item">Create Portfolio</span>
+            </a>
+            <p>Reports</p>
+            <a href="../Report/First Stock Data Report.php">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">Create Report</span>
+            </a>
+            <a href="../Report/myReport.php">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">My Reports</span>
+            </a>
+            <p>News Feed</p>
+            <a href="../NewsFeed/formpagev2.html">
+                <i class='bx bxs-report' ></i>
+                <span class="nav-item">Feed Preferences</span>
+            </a>
+            <a href="../NewsFeed/live_feed.html">
+                <i class='bx bx-news' ></i>
+                <span class="nav-item">Custom Feed</span>
+            </a>
+            <p>Social</p>
+            <a href="../friends/friends.php">
+                <i class='bx bx-user-plus'></i>
+                <span class="nav-item">Add Friends</span>
+            </a>
+            <a href="../Groups/Stock Trading Groups.php">
+                <i class='bx bx-group' ></i>
+                <span class="nav-item">Groups</span>
+            </a>
+            <p></p>
+            <p></p>
+                <a href="../home/logout.php?logout">
+                <i class='bx bx-log-out' ></i>
+                <span class="nav-item">Logout</span>
+            </a>
+        </nav>
+
+    </aside>
+    <main>
+      <div class="container">
+        <form
+        class="mb-5"
+        method="post"
+        id="contactForm"
+        name="contactForm"
+        action="formpagev2.php"
+        onsubmit="myFunction()"
+      >
+      <div class="container">
+        <input type="text" class="form__input" id="name" name="username" placeholder="Verify your user name" required="" />
+        </div>
+        <div class="container">
+          <div class="checkbox-text_top">
+            Choose your interests for personalized articles:
+            </div>
+          <ul class="ks-cboxtags">
+            <li>
+              <input
+                name="interests_results[]"
+                type="checkbox"
+                id="checkboxOne"
+                value="ETFs"
+              /><label for="checkboxOne">ETFs</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxTwo"
+                value="Day Trading"
+                checked
+              /><label for="checkboxTwo">Day Trading</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxThree"
+                value="Tech Stocks"
+                checked
+              /><label for="Dividend Stocks">Tech Stocks</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxFour"
+                value="Crypto"
+              /><label for="checkboxFour">Crypto</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxFive"
+                value="Bonds"
+              /><label for="checkboxFive">Bonds</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxSix"
+                value="S&P 500"
+                checked
+              /><label for="checkboxSix">S&P 500</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxSeven"
+                value="Growth Stocks"
+              /><label for="checkboxSeven">Growth Stocks</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxEight"
+                value="REITs"
+              /><label for="checkboxEight">REITs</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxNine"
+                value="Stock Options"
+              /><label for="checkboxNine">Stock Options</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxTen"
+                value="Energy stocks"
+              /><label for="checkboxTen">Energy stocks</label>
+            </li>
+            <li class="ks-selected">
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxEleven"
+                value="Healthcare Stocks"
+              /><label for="checkboxEleven">Healthcare Stocks</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxTwelve"
+                value="Clover"
+              /><label for="checkboxTwelve">Clover</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxThirteen"
+                value="Algorithmic Trading"
+              /><label for="checkboxThirteen">Algorithmic Trading</label>
+            </li>
+            <li>
+              <input
+              name="interests_results[]"
+              type="checkbox"
+                id="checkboxFourteen"
+                value="JPX"
+              /><label for="checkboxFourteen">JPX</label>
+            </li>
+  
+          </ul>
+        </div>
+        <div class="checkbox-wrapper-6">
+          <div class="checkbox-text">
+            Get included on personalized expiernce based on my portfolios.
+            </div>
+          <input class="tgl tgl-light" id="cb1-6" type="checkbox" name="get_included" value="yes"/>
+          <label class="tgl-btn" for="cb1-6">
+        </div>
+        <div class="submit">
+          <input
+            type="submit"
+            value="Save"
+            class="btn"
+          />
+        </div>
+      </form>
+   
+    </main>
+   <footer>
+        <div class="footer-bottom">
+            <hr>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href=""><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <p>&copy; 2024 StockMate. All Rights Reserved.</p>     
+        </div>
+    </footer>
+
+  </body>
+</html>

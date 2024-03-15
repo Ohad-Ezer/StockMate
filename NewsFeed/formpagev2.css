@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+        body {
+             background-color: #e3e9ed;
+             color: #ecf0f1; /* לבן */
+        }
+
+        .container {
+            margin-top: 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 20px;
+            background-color: #ffffff; /* כחול כהה יותר */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        button {
+            margin-bottom: 15px;
+            padding: 8px;
+            background-color: #2c3e50; /* כחול כהה */
+            color: #ecf0f1; /* לבן */
+            border: none;
+            border-radius: 3px;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #27ae60; /* ירוק כהה יותר */
+        }
+
+        button:hover {
+            background-color: #219a52; /* ירוק כהה יותר */
+        }
+
+        #reportContainer {
+            border-top: 1px solid #fff; /* אפור כהה */
+            padding-top: 20px;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+
+        .email-section {
+            margin-top: 20px;
+        }
+
+        .chart-label {
+            color: #fff; /* לבן */
+        }
+    #toph1 {
+    color: aliceblue;
+;
+    
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #190c35;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s;
+}
+
+aside nav a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+aside nav a:hover:not(.active) {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+
+.top a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav.active {
+    display: block; 
+}
+nav p {
+    color: aliceblue;
+    padding-left: 7px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.top {
+    text-align: center;
+    margin-top: 15%;
+    color: aliceblue;
+}
+
+
+main {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: auto;
+
+}
+
+
+
+ul.ks-cboxtags {
+    list-style: none;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+  
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+
+
+  .checkbox-wrapper-6 .tgl {
+    display: none;
+  }
+  .checkbox-wrapper-6 .tgl,
+  .checkbox-wrapper-6 .tgl:after,
+  .checkbox-wrapper-6 .tgl:before,
+  .checkbox-wrapper-6 .tgl *,
+  .checkbox-wrapper-6 .tgl *:after,
+  .checkbox-wrapper-6 .tgl *:before,
+  .checkbox-wrapper-6 .tgl + .tgl-btn {
+    box-sizing: border-box;
+  }
+  .checkbox-wrapper-6 .tgl::-moz-selection,
+  .checkbox-wrapper-6 .tgl:after::-moz-selection,
+  .checkbox-wrapper-6 .tgl:before::-moz-selection,
+  .checkbox-wrapper-6 .tgl *::-moz-selection,
+  .checkbox-wrapper-6 .tgl *:after::-moz-selection,
+  .checkbox-wrapper-6 .tgl *:before::-moz-selection,
+  .checkbox-wrapper-6 .tgl + .tgl-btn::-moz-selection,
+  .checkbox-wrapper-6 .tgl::selection,
+  .checkbox-wrapper-6 .tgl:after::selection,
+  .checkbox-wrapper-6 .tgl:before::selection,
+  .checkbox-wrapper-6 .tgl *::selection,
+  .checkbox-wrapper-6 .tgl *:after::selection,
+  .checkbox-wrapper-6 .tgl *:before::selection,
+  .checkbox-wrapper-6 .tgl + .tgl-btn::selection {
+    background: none;
+  }
+  .checkbox-wrapper-6 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    margin-left: 88%;
+    margin-top: 5%;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .checkbox-wrapper-6 .tgl + .tgl-btn:after,
+  .checkbox-wrapper-6 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+  }
+  .checkbox-wrapper-6 .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .checkbox-wrapper-6 .tgl + .tgl-btn:before {
+    display: none;
+  }
+  .checkbox-wrapper-6 .tgl:checked + .tgl-btn:after {
+    left: 50%;
+  }
+
+  .checkbox-wrapper-6 .tgl-light + .tgl-btn {
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+  }
+  .checkbox-wrapper-6 .tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-6 .tgl-light:checked + .tgl-btn {
+    background: #007bff;
+  }
+
+  .checkbox-text{
+    float: left;
+    margin-top: 6%;
+    color: rgb(32, 31, 31);
+    font-size: large;
+    font-family:Sans-serif;
+    text-align: center;
+  }
+
+  .submit{
+    float: left;
+    margin: auto;
+    margin-top: 5%;
+
+  }
+
+  .btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+
+  
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container {
+  border-radius: 10px;
+
+}
+  .checkbox-text_top{
+    margin-top: 0.5%;
+    color: rgb(32, 31, 31);
+    font-size: large;
+    font-family:Sans-serif;
+    text-align: center;
+    
+  }
+
+  .form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    border-radius: 0.2rem;
+    background-color:#e7eaf3;
+    border: none;
+    width: 80%;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  
+footer {
+    color: #484747;
+    padding: 20px 0;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    margin-top: 1%;
+    
+}
+.social-icons a {
+    color: #1e1b1b;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-top: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-width: 1px;
+    color: #000000;
+}
+
+

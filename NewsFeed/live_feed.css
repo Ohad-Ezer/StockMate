@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+        body {
+             background-color: #e3e9ed;
+             color: #ecf0f1; /* לבן */
+        }
+
+        .container {
+            margin: 50px auto;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding: 20px;
+            background-color: #190c35; /* כחול כהה יותר */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        button {
+            margin-bottom: 15px;
+            padding: 8px;
+            background-color: #2c3e50; /* כחול כהה */
+            color: #ecf0f1; /* לבן */
+            border: none;
+            border-radius: 3px;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #27ae60; /* ירוק כהה יותר */
+        }
+
+        button:hover {
+            background-color: #219a52; /* ירוק כהה יותר */
+        }
+
+        #reportContainer {
+            border-top: 1px solid #fff; /* אפור כהה */
+            padding-top: 20px;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+
+        .email-section {
+            margin-top: 20px;
+        }
+
+        .chart-label {
+            color: #fff; /* לבן */
+        }
+    #toph1 {
+    color: aliceblue;
+;
+    
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #190c35;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s;
+}
+
+aside nav a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+aside nav a:hover:not(.active) {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+
+.top a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav.active {
+    display: block; 
+}
+nav p {
+    color: aliceblue;
+    padding-left: 7px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.top {
+    text-align: center;
+    margin-top: 15%;
+    color: aliceblue;
+}
+
+
+main {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: auto;
+}
+
+
+.artical{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+image{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50%;
+    background-image: url("https://ml.globenewswire.com/Resource/Download/2170211d-be80-43e0-af63-56f2c28deb9b");
+
+}
+
+.artical_title{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.flex-child {
+    flex-grow: 2;
+    margin-top: 10px;
+    color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+}  
+
+.flex-child:first-child {
+    flex-grow: 0.01;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #000;
+} 
+
+.flex-container:hover {
+    background-color: rgb(219, 235, 248);
+    color: black;
+    border-radius: 20px;
+}
+
+.right_det{
+    color: rgb(122, 122, 122);
+    width: 150px;
+    margin-left: auto;
+    border-left: 2px solid rgb(180, 180, 180);
+}
+
+.aaa{
+    color: rgb(122, 122, 122);
+    width: 150px;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.clock{
+    width: 50px;
+    height: 50px;
+
+    background: url('clock.jpg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+
+footer {
+    color: #484747;
+    padding: 20px 0;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    margin-top: 1%;
+    
+}
+.social-icons a {
+    color: #1e1b1b;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-top: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-width: 1px;
+    color: #000000;
+}
+
+
