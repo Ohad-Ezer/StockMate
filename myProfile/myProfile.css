@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3e9ed;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #190c35;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s;
+}
+
+aside nav a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;  
+}
+
+aside nav a:hover:not(.active) {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+
+.top a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav.active {
+    display: block; 
+}
+nav p {
+    color: aliceblue;
+    padding-left: 7px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.top {
+    text-align: center;
+    margin-top: 15%;
+    color: aliceblue;
+}
+
+
+main {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: auto;
+}
+.wrapper {
+    margin:auto;
+    margin-top: 2%;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: #888;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+.wrapper h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper h3 {
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.wrapper .input-box {
+    width: 45%;
+    margin:2.5% 2.5% 0 2.5% ;
+    float: left;
+    font-size: 14px;
+
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    float: left;
+}
+
+input {
+    background-color: rgb(231, 234, 243);
+    color: rgb(10, 10, 10);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #4f4c4c;
+
+}
+
+
+.buttons-box {
+    clear: both;
+    margin: 2.5%;
+    padding-top: 2.5%;
+}
+
+.input-box input, select {
+    border-radius: 5px;
+    flex: 1; 
+    padding-left: 10px;
+    height: 35px;
+}
+.radio-input {
+    margin-bottom: 2%;
+}
+.radiobtn {
+    margin-left: 3%;
+}
+
+.btnsub {
+    text-align: center;
+}
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .wrapper .input-box {
+        width: 95%; 
+    }
+    .wrapper h1 {
+        font-size: 40px;
+    }
+    .input-box input,
+    .input-box .select,
+    .radio-input label,
+    .radiobtn {
+        font-size: 14px;
+    }
+    .span1{
+        display: none;
+    }
+}
+
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    padding-left: 30px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888; 
+}
+
+.f_portfolio_box {
+    border-style: solid;
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 3%;
+    text-align: center;
+    border-color: #888;
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: rgba(188, 210, 219, 0.26);
+    box-shadow: 0 0 10px rgba(243, 243, 243, 0.2);
+    backdrop-filter: blur(150px);
+    overflow: auto;
+    
+}
+
+.f_portfolio_box h2, p {
+    margin-top: 4%;
+}
+
+.f_portfolio_box button {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    cursor: pointer;
+    width: 50%;
+    height: 30px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.f_portfolio_box button:hover {
+    background-color: #555;
+
+}
+
+.f_stocks { 
+    margin: auto;
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    text-align: center;
+    height: 20px;
+    font-size: 14px;
+}
+
+.deletebtn {
+    clear: both;
+}
+
+
+.stock {
+    height: 250px;
+    color: black;
+}
+
+
+.delete {
+    cursor: pointer;
+    color:black;
+    font-size:14px;
+}
+.delete:hover {
+    color: red;
+}
+
+@media screen and (max-width: 700px) {
+    .f_portfolio_box {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    aside a {text-align: center; float: none;}
+    main {margin-left: 0;}
+    aside .top {margin: 0;}
+    nav {
+        margin-top: 0;
+    }
+    nav p {
+        text-align: center;
+    }
+     .f_portfolio_box {
+        width: 100%;
+        margin-left: 0;
+    }
+    .wrapper {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+
+footer {
+    color: #484747;
+    padding: 20px 0;
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    margin-top: 1%;
+    
+}
+.social-icons a {
+    color: #1e1b1b;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin-top: 25px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-width: 1px;
+    color: #000000;
+}
+
+
+
+
